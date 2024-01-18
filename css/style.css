@@ -6,7 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: var(--primary-font), monospace;
-    color: white;
+    color: var(--fourth-color);
 }
 /* Variables */ 
 :root {
@@ -17,6 +17,13 @@
     --primary-font: Roboto;
     --second-font: Copperplate;
     --third-font: Inter;
+}
+
+.dark-theme{
+    --primary-color: #F9EFDB;
+    --second-color: #EBD9B4;
+    --third-color: #638889;
+    --fourth-color: black;
 }
 
 body {
@@ -73,7 +80,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-    color: #f4f4f4;
+    color: var(--fourth-color);
     font-family: var(--third-font),monospace;
 }
 
@@ -218,4 +225,17 @@ body {
 
 .university-name {
     margin-bottom: 8px;
+}
+
+#btn{
+    width: 75px;
+    height: 45px;
+    border-radius: 9999px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#btn i {
+    color: black;
 }
